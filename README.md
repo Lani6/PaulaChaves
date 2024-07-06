@@ -1,5 +1,5 @@
-# Web Page: Book Store
-**Developer:** Paula Chaves Rivera C02231
+# Web Site: Book Store
+**Developer:** Paula Yislania Chaves Rivera
 
 ---
 
