@@ -52,7 +52,7 @@ This flowchart details the steps a user takes to purchase a book from an online 
 
 ### Diagram Project Structure
 
-<img src="C02231/Images/Paquetes.jpeg" alt="Paquetes" width="600" height="600">
+<img src="C02231/Images/Paquetes.jpeg" alt="Paquetes" width="600" height="700">
 
 
 This diagram represents the structure of the project, divided into `BackEnd` and `FrontEnd` components:
@@ -196,7 +196,7 @@ This class provides the logic for interacting with the store database.
 
 ## Campaign Activity Diagram
 
-<img src="C02231/Images/Campaign.png" alt="Campaign" width="400" height="900">
+<img src="C02231/Images/Campaign.png" alt="Campaign" width="450" height="900">
 
 ### 1. Admin
 
@@ -242,7 +242,7 @@ This system manages and validates payment methods, allowing administrators to ac
 
 ### Payment Method Management and Validation
 
-<img src="C02231/Images/Paymenth.png" alt="PaymenthMethods" width="400" height="850">
+<img src="C02231/Images/Paymenth.png" alt="PaymenthMethods" width="450" height="850">
 
 This diagram shows two main activity flows:
 
