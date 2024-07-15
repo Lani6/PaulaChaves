@@ -610,3 +610,26 @@ Binary search is a classic algorithm for finding a sorted list of products. It w
 
 3. **Data Security and Privacy**:
    - When displaying sensitive data like sales figures, ensuring data security and privacy is paramount. This involves implementing secure data transmission (e.g., HTTPS), validating user permissions (as mentioned in the error handling), and adhering to data protection regulations (e.g., GDPR).
+
+
+
+Data Base:
+1. docker pull mysql:latest   --extraigo la imagen 
+2. docker run --name mysql2  -e MYSQL_ROOT_PASSWORD=123456  -p 3306:3306 mysql    --ejecuto el contenedor
+3. mysql -h 127.0.0.1 -u root -p123456     ---desde el exec
+4. create database store;
+
+Docker Images:
+Api:
+docker build -t lani06/storeapi:latest .
+docker pull lani06/storeapi:latest
+docker run --name container -d -e DB="Server=192.168.56.1;Database=store;Uid=root;Pwd=123456;" -e ASPNETCORE_ENVIRONMENT=Development -e Security=False -p 8080:8080 lani06/storeapi:latest
+
+Front:
+docker build -t lani06/react:latest .
+docker pull lani06/react:latest
+docker run -d --name frontend -p 3000:3000 -e NEXT_PUBLIC_API_URL=http://localhost:8080 lani06/react:latest
+
+Or use Docker compose:
+docker-compose -f C02231.yml up
+docker-compose -f C02231.yml down
