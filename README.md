@@ -621,15 +621,15 @@ Data Base:
 
 Docker Images:
 Api:
-docker build -t lani06/storeapi:latest .
-docker pull lani06/storeapi:latest
-docker run --name container -d -e DB="Server=192.168.56.1;Database=store;Uid=root;Pwd=123456;" -e ASPNETCORE_ENVIRONMENT=Development -e Security=False -p 8080:8080 lani06/storeapi:latest
+0. docker build -t lani06/storeapi:latest .
+1. docker pull lani06/storeapi:latest
+2. docker run --name container -d -e DB="Server=192.168.56.1;Database=store;Uid=root;Pwd=123456;" -e ASPNETCORE_ENVIRONMENT=Development -e Security=False -p 8080:8080 lani06/storeapi:latest
 
 Front:
-docker build -t lani06/react:latest .
-docker pull lani06/react:latest
-docker run -d --name frontend -p 3000:3000 -e NEXT_PUBLIC_API_URL=http://localhost:8080 lani06/react:latest
+0. docker build -t lani06/react:latest .  
+1. docker pull lani06/react:latest  
+2. docker run -d --name frontend -p 3000:3000 -e NEXT_PUBLIC_API_URL=http://localhost:8080 lani06/react:latest  
 
 Or use Docker compose:
-docker-compose -f C02231.yml up
-docker-compose -f C02231.yml down
+1. docker-compose -f C02231.yml up
+2. docker-compose -f C02231.yml down
